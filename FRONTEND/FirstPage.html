@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facefit</title>
+    <link rel="stylesheet" href="FirstPage.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content"></div>
+
+    <img src="Men.png" class="side-image left" id="menImage" alt="Left Image">
+    <img src="Women.png" class="side-image right" id="womenImage" alt="Right Image">
+
+    <div class="custom-text" id="typewriter"></div>
+    
+    <div class="pop-text" id="facefit">
+        <span class="letter">F</span>
+        <span class="letter">a</span>
+        <span class="letter">c</span>
+        <span class="letter">e</span>
+        <span class="letter">f</span>
+        <span class="letter">i</span>
+        <span class="letter">t</span>
+    </div>
+
+
+   <!-- LOgin form -->
+   <div class="form-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Username (letters & numbers)" required>
+        <input type="password" id="loginPassword" placeholder="Password (numbers only)" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+        <input type="text" id="signupUsername" placeholder="Username (letters & numbers)" required>
+        <input type="password" id="signupPassword" placeholder="Password (numbers only)" required>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+
+
+
+
+    <script src="Firstpage.js"></script>
+</body>
+</html>

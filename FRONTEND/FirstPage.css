@@ -1,0 +1,153 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+}
+
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20%;
+}
+
+/* Styles for side images */
+.side-image {
+    position: absolute; 
+    height: auto; 
+    opacity: 1; 
+    animation: popIn 1s forwards; 
+    z-index: 1; 
+}
+
+/* Left Image */
+.left {
+    right: 380px; 
+    transform: translateX(100%); 
+    width: 250px; 
+}
+
+/* Right Image */
+.right {
+    right: 0px; 
+    top: 400px;
+    transform: translateX(100%); 
+    width: 400px; 
+}
+
+/* Keyframes for the pop-in animation */
+@keyframes popIn {
+    0% {
+        transform: scale(0); 
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+        transform: scale(1); 
+    }
+}
+
+/* Custom text styles */
+.custom-text {
+    position: absolute; 
+    top: 250px; 
+    left: 76%; 
+    transform: translateX(-50%); 
+    font-size: 4em; 
+    color: #ffcc00; 
+    font-family: 'Lobster', cursive; 
+    font-weight: 400; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+
+
+/* Pop text styles */
+.pop-text {
+    position: absolute; 
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 4em; 
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    animation: colorChange 4s infinite; /* Add color change animation */
+}
+
+/* Color change animation */
+@keyframes colorChange {
+    0% {
+        color: #ffcc00; /* Light Yellow */
+    }
+    25% {
+        color: #ffb300; /* Medium Yellow */
+    }
+    50% {
+        color: #ffcc00; /* Back to Light Yellow */
+    }
+    75% {
+        color: #e6b800; /* Darker Yellow */
+    }
+    100% {
+        color: #ffcc00; /* Light Yellow */
+    }
+}
+
+
+
+
+/* Login Form Styles */
+
+.form-container {
+    position: absolute;
+    bottom: 50px; 
+    left: 50px; 
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Lobster', cursive; 
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6b800; 
+}
